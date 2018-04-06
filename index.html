@@ -2,13 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Sign Data</title>
+    <title>Ed25519 example</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./default.min.css">
   </head>
-  <body>
+  <body class="container">
     <script src="./index.js"></script>
+    <h1>Generate Ed25519 key pairs, sign &amp; verify messages</h1>
+
+    <p>
+      This is a small example demonstrating how to build Rust code for the web using
+      <a href="https://github.com/rustwasm/wasm-bindgen">wasm-bindgen</a>.
+    </p>
+    <p>
+      The code for this website is available at
+      <a href="https://github.com/badboy/signify-web">https://github.com/badboy/signify-web</a>.
+    </p>
+    <p>
+      <strong>THIS CODE IS NOT INTENDED FOR SERIOUS USE. DON'T RELY ON THE CRYPTO HERE!</strong>
+    </p>
 
     <div>
-      <h1>Generate keys</h1>
+      <h2>Generate keys</h2>
       <button id="generate-new">Generate new key pair</button>
 
       <br />
@@ -20,7 +36,7 @@
     </div>
 
     <div>
-      <h1>Sign message</h1>
+      <h2>Sign message</h2>
       <span>Message</span>
       <textarea id='sign-message' rows="10" cols="50"></textarea>
       <br />
@@ -34,7 +50,7 @@
     </div>
 
     <div>
-      <h1>Verify message</h1>
+      <h2>Verify message</h2>
       <span>Message</span>
       <textarea id='verify-message' rows="10" cols="50"></textarea>
       <br />

@@ -8,4 +8,4 @@ webpack:
 	npx webpack
 
 html:
-	cp index.html dist/
+	cp index.html *.css dist/
