@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Data</title>
+  </head>
+  <body>
+    <script src="./index.js"></script>
+
+    <div>
+      <h1>Generate keys</h1>
+      <button id="generate-new">Generate new key pair</button>
+
+      <br />
+      <span>Public Key</span>
+      <input type='text' id='public-key' readonly style="width:400px">
+      <br />
+      <span>Secret Key</span>
+      <input type='text' id='secret-key' readonly style="width:400px">
+    </div>
+
+    <div>
+      <h1>Sign message</h1>
+      <span>Message</span>
+      <textarea id='sign-message' rows="10" cols="50"></textarea>
+      <br />
+      <span>Secret Key</span>
+      <input type='text' id='sign-secret-key' style="width:400px">
+      <br />
+      <button id="sign">Sign message</button>
+      <br />
+      <span>Signature</span>
+      <input type='text' id='sign-signature' readonly style="width:400px">
+    </div>
+
+    <div>
+      <h1>Verify message</h1>
+      <span>Message</span>
+      <textarea id='verify-message' rows="10" cols="50"></textarea>
+      <br />
+      <span>Signature</span>
+      <input type='text' id='verify-signature' style="width:400px">
+      <br />
+      <span>Public Key</span>
+      <input type='text' id='verify-public-key' style="width:400px">
+      <br />
+      <button id="verify">Verify message</button>
+      <br />
+      <span>Result</span>
+      <input type='text' id='verify-result' readonly style="width:400px">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+[package]
+name = "signify-web"
+version = "0.1.0"
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+ed25519-dalek = "0.6"
+rand = "0.4"
+sha2 = "0.7"
+base64 = "0.9.0"

@@ -1,0 +1,8 @@
+
+/target
+**/*.rs.bk
+Cargo.lock
+dist
+node_modules/
+signify_web.js
+signify_web_bg.wasm
